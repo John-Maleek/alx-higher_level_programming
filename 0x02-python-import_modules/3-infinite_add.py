@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
 
+
 def add_args(argv):
     args = len(argv) - 1
     if args == 0:
@@ -15,6 +16,7 @@ def add_args(argv):
             count += 1
 
         print("{:d}".format(total))
+
 
 if __name__ == "__main__":
     add_args(sys.argv)

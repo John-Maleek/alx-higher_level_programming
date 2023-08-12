@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
 
+
 def print_arg(argv):
     args = len(argv) - 1
     if args == 0:
@@ -15,6 +16,7 @@ def print_arg(argv):
         while count <= args:
             print("{:d}: {:s}".format(count, argv[count]))
             count += 1
+
 
 if __name__ == "__main__":
     print_arg(sys.argv)
