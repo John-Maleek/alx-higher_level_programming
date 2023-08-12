@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-import hidden_4
 
 
-def print_names():
+def print_names(hidden_4):
     hidden_names = dir(hidden_4)
     for name in hidden_names:
         if name.startswith('__'):
@@ -12,4 +11,5 @@ def print_names():
 
 
 if __name__ == "__main__":
-    print_names()
+    import hidden_4
+    print_names(hidden_4)
