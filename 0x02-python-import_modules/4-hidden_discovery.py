@@ -7,7 +7,7 @@ def print_names(hidden_4):
         if name.startswith('__'):
             continue
         else:
-            print("{:s}".format(i))
+            print("{:s}".format(name))
 
 
 if __name__ == "__main__":

@@ -10,7 +10,7 @@ def print_arg(argv):
         if args == 1:
             print("{:d} argument:".format(args))
         else:
-            print("{:d} argument:".format(args))
+            print("{:d} arguments:".format(args))
         count = 1
         while count <= args:
             print("{:d}: {:s}".format(count, argv[count]))
