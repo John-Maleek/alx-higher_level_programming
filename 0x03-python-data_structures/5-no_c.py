@@ -11,6 +11,6 @@ def no_c(my_string):
         elif char == C:
             continue
         else:
-            new_str_list.append(char) 
+            new_str_list.append(char)
     new_str = ''.join([char for char in new_str_list])
     return new_str
