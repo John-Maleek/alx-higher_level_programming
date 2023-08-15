@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-number = 3.1415i9
+number = 3.14159
 print(f"{num:.2f}")
