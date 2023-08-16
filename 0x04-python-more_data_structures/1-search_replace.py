@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 def search_replace(my_list, search, replace):
-    new_list = list(map(lambda item: replace if item is search else item, my_list))
+    new_list = list(map(lambda i: replace if i is search else i, my_list))
     return new_list
