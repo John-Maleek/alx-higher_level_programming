@@ -4,6 +4,9 @@ def best_score(a_dictionary):
         keys_list = list(a_dictionary)
         values_list = [a_dictionary[item] for item in keys_list]
         values_list.sort()
-        return values_list[-1]
+        best_val = values_list[-1]
+        for key, val in a_dictionary.items():
+            if val == best_val:
+                return key
     else:
         return None
