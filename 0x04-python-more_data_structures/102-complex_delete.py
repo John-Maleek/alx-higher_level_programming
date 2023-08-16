@@ -6,4 +6,4 @@ def complex_delete(my_dict, value):
             arr.append(key)
     for item in arr:
         del my_dict[item]
-    return(my_dict)
+    return my_dict
