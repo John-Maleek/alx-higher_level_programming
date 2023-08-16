@@ -1,2 +1,9 @@
 #!/usr/bin/python3
-square_matrix_simple = lambda matrix=[]: [[item ** 2 for item in row] for row in matrix]
+def square_matrix_simple(matrix=[]):
+    square_matrix = []
+    for row in matrix:
+        square_row = []
+        for item in row:
+            square_row.append(item ** 2)
+        square_matrix.append(square_row)
+    return square_matrix
