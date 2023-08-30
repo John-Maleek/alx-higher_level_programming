@@ -5,7 +5,7 @@ def safe_print_list(my_list=[], x=0):
     while True:
         try:
             if i < x:
-                print('{}'.format(mylist[i]), end='')
+                print('{}'.format(my_list[i]), end='')
                 i += 1
             else:
                 print()
