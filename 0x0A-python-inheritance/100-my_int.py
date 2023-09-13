@@ -6,7 +6,8 @@ class MyInt(int):
     """Inverts int operators == and !=."""
     def __ne__(self, value):
         """inverts != operator with =="""
-         return self.real == value
+        return self.real == value
+
     def __eq__(self, value):
         """inverts == operator with !="""
         return self.real != value
