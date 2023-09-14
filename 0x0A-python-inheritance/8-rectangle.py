@@ -4,12 +4,9 @@
 BaseGeometry = __import__("7-base_geometry.py").BaseGeometry
 
 
-"""Module defines a Rectangle class"""
-
-
 class Rectangle(BaseGeometry):
     """
-        defines a subclass of BaseGeometry
+        defines a subclass of BaseGeometry:w
     """
     def __init__(self, width, height):
         """initialises Rectangle class"""
