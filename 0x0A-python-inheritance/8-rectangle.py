@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""
-    Module defines a class Rectangle
-"""
 
 
 BaseGeometry = __import__("7-base_geometry.py").BaseGeometry
+
+
+"""Module defines a Rectangle class"""
 
 
 class Rectangle(BaseGeometry):
