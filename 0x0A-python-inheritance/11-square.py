@@ -1,12 +1,16 @@
 #!/usr/bin/python3
-"""Module defines a class"""
+"""
+    Module defines a class
+"""
 
 
 Rectangle = __import__('9-rectangle.py').Rectangle
 
 
 class Square(Rectangle):
-    """Defines a square class"""
+    """
+        Defines a square class
+    """
     def __init__(self, size):
         """initialises Square"""
         self.integer_validator('size', size)
