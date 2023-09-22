@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module defines a Square class"""
+"""Module defines a Square class that inherits from Rectangle"""
 
 
 from models.rectangle import Rectangle
@@ -12,20 +12,24 @@ class Square(Rectangle):
 
     @property
     def size(self):
+        """Returns the value of a private attribute"""
         return self.width
 
     @size.setter
     def size(self, value):
+        """sets the value of a private  attribute"""
         self.width = value
         self.height = value
 
     def __str__(self):
+        """Returns a string representation of Square"""
         return "[Square] ({:d}) {:d}/{:d} - {:d}".format(self.id,
                                                          self.x,
                                                          self.y,
                                                          self.width)
 
     def update(self, *args, **kwargs):
+        """Updates parameters of class instance"""
         if len(args):
             for i, arg in enumerate(args):
                 if i == 0:
@@ -42,6 +46,7 @@ class Square(Rectangle):
                     setattr(self, key, value)
 
     def to_dictionary(self):
+        """Retuns a dictionary representation of the class"""
         return {
             "id": self.id,
             "size": self.size,
