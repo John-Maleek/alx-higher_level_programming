@@ -1,7 +1,9 @@
 #!/usr/bin/node
 
 function second (myArray) {
-  if (myArray.length === 2 || myArray.length === 3) { return (0); }
+  if (myArray.length === 2 || myArray.length === 3) {
+    return (0);
+  }
 
   let max = myArray[2];
   let secondMax = myArray[3];
