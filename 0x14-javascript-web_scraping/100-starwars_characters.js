@@ -1,7 +1,7 @@
 #!/usr/bin/node
-const request = require("request");
+const request = require('request');
 const id = process.argv[2];
-const url = "https://swapi-api.alx-tools.com/api/films/" + id;
+const url ='https://swapi-api.alx-tools.com/api/films/' + id;
 
 function getCharacter(el) {
   request(el, (error, response, body) => {
@@ -15,7 +15,7 @@ function getCharacter(el) {
 
 request(url, (error, response, body) => {
   if ((response, body)) {
-    res = JSON.parse(body);
+    const res = JSON.parse(body);
     res?.characters?.forEach((el) => {
       getCharacter(el);
     });

@@ -1,14 +1,14 @@
 #!/usr/bin/node
-const request = require("request");
+const request = require('request');
 const url = process.argv[2];
 
 request(url, (error, response, body) => {
   if ((response, body)) {
-    res = JSON.parse(body);
+    const res = JSON.parse(body);
 
     let arr = [];
     res.forEach((el) => {
-      user = el.userId;
+      const user = el.userId;
       if (!arr.includes(user)) {
         arr.push(user);
       }
@@ -20,11 +20,10 @@ request(url, (error, response, body) => {
       res.forEach((item) => {
         if (item.userId === el && item.completed) {
           count += 1;
-          obj[`${el}`] = count;
+          obj[el] = count;
         }
       });
     });
-
     console.log(obj);
   } else {
     console.error(error);
